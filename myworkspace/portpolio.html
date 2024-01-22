@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>가위바위보</title>
+
+  <!--<script defer src="javascript/rocktest.js"></script>-->
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Dongle&family=Hi+Melody&display=swap');
+
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+      background-color: rgb(233, 115, 115);
+      justify-content: center;
+    }
+
+    header {
+      height: 10%;
+      width: 80%;
+      text-align: center;
+      font-size: 30px;
+      font-family: "Dongle", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      margin: 0 auto;
+
+    }
+
+    aside {
+      width: 15%;
+      height: auto;
+      float: left;
+      border: solid 2px black;
+
+    }
+
+
+    section {
+      width: 65%;
+      height: 80%;
+      background-color: aliceblue;
+      margin: 0 auto;
+    }
+
+    #mainside {
+      margin: 0 auto;
+      padding: 10px;
+      background-color: aliceblue;
+    }
+
+    #main {
+      margin: 0 auto;
+      width: 100%;
+      height: 100%;
+      background-color: aliceblue;
+      border: none;
+      position: absolute;
+    }
+
+    li {
+      height: 50px;
+      font-family: "Dongle", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 45px;
+      margin-bottom: 30px;
+
+
+    }
+
+    li a {
+      padding: 8px 15px 8px 15px;
+      color: rgb(0, 0, 0);
+      display: block;
+      background-color: rgb(255, 255, 255);
+      text-decoration-line: none;
+    }
+
+    li a:hover {
+      background-color: rgb(0, 0, 0);
+      color: rgb(255, 255, 255);
+    }
+
+    #list {
+      background-color: rgb(255, 255, 255);
+      list-style-type: none;
+      height: auto;
+      margin: 0 auto;
+      text-align: center;
+      padding-left: 0;
+
+    }
+
+    iframe {
+      margin: 0 auto;
+    }
+
+    #area {
+      position: relative;
+      width: 100%;
+      padding-bottom: 60%;
+    }
+  </style>
+
+</head>
+
+<body>
+  <meta charset="utf-8">
+
+  <header>
+
+  </header>
+
+  <aside>
+    <ul id="list">
+      <li><a href="rock.html" target="rock">가위바위보</a></li>
+      <li><a href="#">게임</a></li>
+      <li><a href="#">게임</a></li>
+      <li><a href="#">게임</a></li>
+    </ul>
+  </aside>
+  <section>
+    <div id="mainside" style="height: 100%">
+      <div id="area">
+        <iframe id="main" name="rock" frameborder='0' scrolling="no"></iframe>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

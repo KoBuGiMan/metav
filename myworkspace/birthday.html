@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>
+    임금님 수라상
+  </title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Dongle&family=Hi+Melody&display=swap');
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: #d9f1f1;
+      justify-content: center;
+
+    }
+
+    header {
+      width: 23%;
+      height: 12%;
+      background-color: white;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      font-family: "Dongle", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 80px;
+      color: #6eceda;
+      border-radius: 30px;
+
+    }
+
+    section {
+      width: 66%;
+      height: 80%;
+      float: left;
+      background-color: white;
+      margin-left: 35px;
+      border: solid 10px #c3e2dd;
+      border-radius: 20px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .sectionimg {
+      width: 1280px;
+      height: 762px;
+      border-radius: 10px;
+      margin: 0 auto;
+    
+    }
+
+    .section-back {
+      width: 700px;
+      height: 400px;
+      margin-left: 270px;
+      margin-top: 180px;
+      background-color: rgb(244, 248, 248);
+      position: absolute;
+      border-radius: 10px;
+      border: solid 2px #6eceda;
+    }
+
+    .section-text {
+      position: absolute;
+      top: 26%;
+      left: 20%;
+      font-family: "Dongle", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 40px;
+    }
+
+
+    .aside1 {
+      width: 15%;
+      height: 82%;
+      float: right;
+      background-color: white;
+    }
+
+    .aside1img {
+      width: 100%;
+      height: inherit;
+      overflow: hidden;
+    }
+
+    .aside2 {
+      width: 15%;
+      height: 82%;
+      float: left;
+      background-color: white;
+
+    }
+
+    .aside2img {
+      width: 100%;
+      height: inherit;
+      overflow: hidden;
+    }
+
+    footer {
+      width: 66%;
+      height: 7%;
+      clear: both;
+      background-color: white;
+      margin-left: 327px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <header style="margin-top: 20px;">
+    생일 검사기
+  </header>
+  <br>
+  <aside class="aside2">
+    <img class="aside2img" src="img/23647435 (1).jpg">
+  </aside>
+  <section>
+    <div class=" section-back">
+      <div class="section-text">
+        <form id="submit" action="birthday_memory.php" method="GET">
+          <label>
+            이&ensp;&ensp;름:&nbsp; <input style="font-size: 30px;" type="text" size="15" value="" name="name"><br>
+            성&ensp;&ensp;별:
+            <select style="font-size: 30px; " name="gender">
+              <option value="1">남자</option>
+              <option value="2">여자</option>
+            </select><br>
+            생일 날짜: <input style="font-size: 30px;" type="date" value="2000-01-01" name="date
+            _my"><br>
+            <input style="float: right; font-size: 25px;" type="submit" value="OK!">
+          </label>
+        </form>
+      </div>
+    </div>
+    <div>
+      <img class="sectionimg" src="img/minimalist gift box with balloon_3749740.jpg" alt="생일 이미지">
+    </div>
+
+  </section>
+  <aside class="aside1">
+    <img class="aside1img" src="img/23647435.jpg">
+
+
+  </aside>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    @media screen and (min-width: 700px) {
+
+      html,
+      body {
+        background-color: rgb(240, 232, 205);
+        height: 100%;
+        width: 100%;
+      }
+
+      header {
+        height: 7%;
+      }
+
+      section {
+        height: 80%;
+        width: 70%;
+        background-color: aliceblue;
+        margin: 0 auto;
+        border: 1px solid black;
+        background-image: url('img/대나무숲.jpg');
+        position: relative;
+      }
+
+      #pubao_box {
+        height: 300px;
+        z-index: 1;
+      }
+
+      #pubao {
+        height: auto;
+        width: auto;
+        margin-bottom: 20px;
+      }
+
+      #user_consol {
+        height: 35%;
+        width: 95%;
+        position: relative;
+        margin: 0 auto;
+        background-color: rgb(255, 255, 255);
+        z-index: 2;
+
+      }
+
+      #user_consol_text {
+        margin: 20px;
+
+      }
+
+      article {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  </style>
+
+
+</head>
+
+<body>
+  <header>
+
+  </header>
+  <section>
+
+    <article style="text-align: center; ">
+      <!--푸바오 이미지-->
+      <div id="pubao">
+        <img id="pubao_img" style="height: 320px;" width="auto" src="img/푸바오 주먹내미는 짤.png" alt="푸바오 등장">
+
+        <img id="img" src="">
+
+      </div>
+
+
+      <div>
+        <button id="rock" type="button">
+          <img src="img/rock.png" style="width: 120px;height: 150px;">
+        </button>
+        <button id="scissor" type="button">
+          <img src="img/scissors.png" style="width: 120px;height: 150px;">
+        </button>
+        <button id="paper" type="button">
+          <img src="img/paper.png" style="width: 120px;height: 150px;">
+        </button>
+      </div>
+    </article>
+    
+
+  </section>
+
+  <script src="javascript/rocktest.js"></script>
+</body>
+
+</html>

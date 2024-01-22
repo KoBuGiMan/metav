@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <style>
+    html,
+    body {
+      background-color: antiquewhite;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      justify-content: center;
+
+    }
+
+    header {
+      margin: 20px auto;
+      text-align: center;
+      background-color: rgb(250, 246, 246);
+      font-size: 40px;
+      width: 380px;
+      height: 7%;
+      border: double 5px darkgrey;
+
+      padding-top: 9px;
+    }
+
+    .aside {
+      width: 10%;
+      height: auto;
+      float: left;
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-top: 1%;
+    }
+
+    .aside img {
+      width: 100%;
+      height: auto;
+    }
+
+    .aside2 {
+      width: 10%;
+      height: auto;
+      float: left;
+      margin-left: 20px;
+      margin-top: 1%;
+    }
+
+    .aside2 img {
+      width: 100%;
+      height: auto;
+    }
+
+    .back {
+
+      background-color: rgb(234, 239, 241);
+      height: auto;
+      width: 66%;
+      margin: 20px auto;
+      padding: 30px 30px;
+      border: solid 3px gray;
+      border-radius: 10px;
+      float: left;
+    }
+
+    .paper {
+      background-color: rgb(234, 239, 241);
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+      text-align: center;
+
+    }
+
+    .backimg {
+      width: 400px;
+      height: 300px;
+      text-align: center;
+      display: inline-block;
+      margin: 20px 5px;
+      position: relative;
+
+    }
+
+    .backimg img {
+      border: solid 2px black;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: filter 0.5s ease-in-out;
+    }
+
+    .backimg p {
+      position: absolute;
+      opacity: 0;
+      width: 405px;
+      height: 305px;
+      top: 0;
+      left: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #fff;
+      background-color: rgb(0, 0, 0, 0.8);
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    .backimg:hover img {
+      filter: brightness(50%);
+    }
+
+    .backimg:hover p {
+      opacity: 1;
+    }
+
+    footer {
+      height: 10%;
+      width: 70%; 
+      clear: both;
+      margin: 0 auto;
+      border-radius: 10px;
+      background-color: #fff;
+    }
+
+    
+  </style>
+</head>
+
+<body>
+  <header>
+    네이버 인기 웹툰
+  </header>
+  <aside>
+    <div class="aside" style="width: 247px;">
+      <img
+        src="https://media.istockphoto.com/id/865448984/ko/%EC%82%AC%EC%A7%84/%EA%B0%80-%EC%B6%94%EC%83%81%ED%99%94%EC%9E%85%EB%8B%88%EB%8B%A4-%EC%84%B8%EB%A1%9C%EB%A1%9C-%EA%B8%B4-%EB%B0%B0%EB%84%88%EC%9E%85%EB%8B%88%EB%8B%A4.jpg?s=2048x2048&w=is&k=20&c=TlbI6fBVioCbcCMzBEq4vYVmZyDuJrX7fs5fp6zYWGI="
+        alt="">
+    </div>
+  </aside>
+  <div class="back">
+    <div class="paper">
+      <div class="backimg">
+        <a href="https://comic.naver.com/webtoon/list?titleId=819217&tab=mon" target="_blank">
+          <img
+            src="https://i.namu.wiki/i/oIZ1Y0wW7NhZcytz-1RbhzbFA5oleR1vjxRbpbQNrtRg86FII6BDKREbbZBVvPKqg95_fNyQXtBxbnyhRUE0_A.webp"
+            alt="12시네 점심">
+          <p>12시네 점심<br><br>조석</p>
+        </a>
+      </div>
+      <div class="backimg">
+        <a href="https://comic.naver.com/webtoon/list?titleId=478261&tab=thu" target="_blank">
+          <img src="https://pbs.twimg.com/profile_images/960404969714102274/TrysPcUO_400x400.jpg" alt="선천적 얼간이들2">
+          <p>선천적 얼간이들2<br><br>가스파드</p>
+        </a>
+      </div>
+      <div class="backimg">
+        <a href="https://comic.naver.com/webtoon/list?titleId=769209&tab=wed" target="_blank">
+          <img src="https://cdn.imweb.me/thumbnail/20230608/95131d2134f33.jpg" alt="화산귀환">
+          <p>화산귀환<br><br>LICO / 비가</p>
+        </a>
+      </div>
+      <div class="backimg">
+        <a href="https://comic.naver.com/webtoon/list?titleId=730694&tab=sat" target="_blank">
+          <img
+            src="https://ylabac.kr/wp-content/uploads/2019/07/%EB%8D%B0%EB%B7%94-%EC%9D%B8%ED%84%B0%EB%B7%B0-%EC%B4%88%EC%9D%B8%EC%9D%98-%EC%8B%9C%EB%8C%80-%EC%84%AD%EC%9D%B4-04.jpg"
+            alt="초인의 시대">
+          <p>초인의 시대<br><br>섭이</p>
+        </a>
+      </div>
+      <div class="backimg">
+        <a href="https://comic.naver.com/webtoon/list?titleId=747269&tab=wed" target="_blank">
+          <img src="https://cdn.manzlab.com/news/photo/202005/5567_12157_101.jpg" alt="전지적 독자 시점">
+          <p>전지적 독자 시점<br><br>UMI / 슬리피-C / 싱숑</p>
+        </a>
+      </div>
+      <div class="backimg">
+        <a href="https://comic.naver.com/webtoon/list?titleId=777767&tab=fri" target="_blank">
+          <img
+            src="https://s3-ap-northeast-1.amazonaws.com/teamblindstatics/link/8/df630fe96cc1f4ce6007efe68d48d47f_1675885631418_crop.jpeg"
+            alt="역대급 영지 설계사">
+          <p>역대급 영지 설계사<br><br>이현민 / 김현수 / 문경백</p>
+        </a>
+      </div>
+      <div class="backimg">
+        <a href="https://comic.naver.com/webtoon/list?titleId=747271&tab=thu" target="_blank">
+          <img src="https://www.techm.kr/news/photo/202206/98117_113087_5551.jpg" alt="나노마신">
+          <p>나노마신<br><br>이현민 / 김현수 / 문경백</p>
+        </a>
+      </div>
+      <div class="backimg">
+        <a href="https://comic.naver.com/webtoon/list?titleId=774044&tab=sun" target="_blank">
+          <img
+            src="https://i.namu.wiki/i/XLa-HkbIo-xERXg7IHO97Jt3-tu7TX7zigLHbUIr7ZHIwoSa-gHCEKVuXuavzW8fdNk0yCB_cdKJm5aUV_2A7g.webp"
+            alt="투신전생기">
+          <p>투신전생기<br><br>청담</p>
+        </a>
+      </div>
+      <div class="backimg">
+        <a href="https://comic.naver.com/webtoon/list?titleId=803891&tab=wed target=" _blank">
+          <img
+            src="https://i.namu.wiki/i/j2nzAMbohz7IFATZyCee-IARe6CxnoEt7tDtWqbZ2pq1YKEbCavk7nydBTRAz4UQDHs3O9FAnq-Huyrj9Txe1Q.webp"
+            alt="용한소녀">
+          <p>용한소녀<br><br>올소</p>
+        </a>
+      </div>
+    </div>
+  </div>
+  <aside>
+    <div class="aside2" style="width: 247px;">
+      <img
+        src="https://media.istockphoto.com/id/865448984/ko/%EC%82%AC%EC%A7%84/%EA%B0%80-%EC%B6%94%EC%83%81%ED%99%94%EC%9E%85%EB%8B%88%EB%8B%A4-%EC%84%B8%EB%A1%9C%EB%A1%9C-%EA%B8%B4-%EB%B0%B0%EB%84%88%EC%9E%85%EB%8B%88%EB%8B%A4.jpg?s=2048x2048&w=is&k=20&c=TlbI6fBVioCbcCMzBEq4vYVmZyDuJrX7fs5fp6zYWGI="
+        alt="">
+    </div>
+  </aside>
+  <footer>
+    <div>
+      하이요
+    </div>
+    <br>
+    <div>
+      하이요
+    </div>
+  </footer>
+
+</body>
+
+</html>

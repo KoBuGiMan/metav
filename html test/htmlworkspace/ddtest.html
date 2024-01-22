@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function words() {
+            document.getElementById("내용").src = "전체적인 틀을 만들어주는 툴로서 각 항목의 위치나 역활을 수행한다"
+        }
+    </script>
+    <style>
+        * {
+            font-family: Consolas, monospace;
+            font-size: 16px;
+        }
+
+        .jb-text {
+            padding: 15px 20px;
+            background-color: #444444;
+            border-radius: 5px;
+            color: #ffffff;
+            position: absolute;
+            opacity: 0;
+            transition: all ease 0.5s;
+        }
+
+        .jb-title:hover+.jb-text {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        프론트 엔드
+    </h1>
+    <hr style="border: solid 2px black;">
+    <div>
+        <p class="jb-title">
+            HTML
+        </p>
+        <div class="jb-text">
+            dkddkdkkkkkkkkkkkk
+        </div>
+    </div>
+    <dl>
+
+        <dt>
+            CSS
+        </dt>
+        <dd>
+            각 항목의 디자인을 담당하는 프로그램이다.
+        </dd>
+        <dt>
+            JAVASCRIPT
+        </dt>
+        <dd>
+            애니메이션이나 동작들을 추가하여 실행하게 해주는 프로그램
+        </dd>
+    </dl>
+</body>
+
+</html>
