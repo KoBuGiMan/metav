@@ -249,11 +249,11 @@ function lotttest() {
 
 function birth() {
   let students = [
-    { name: "가", birth: new Date(1999, 0, 26) },
+    { name: "가", birth: new Date(1999, 1, 29) },
     { name: "나", birth: new Date(1999, 1, 23) },
     { name: "다", birth: new Date(1999, 2, 15) },
     { name: "라", birth: new Date(1999, 3, 29) },
-    { name: "마", birth: new Date(1999, 4, 4) },
+    { name: "마", birth: new Date(1999, 0, 30) },
     { name: "바", birth: new Date(1999, 5, 18) },
     { name: "사", birth: new Date(1999, 6, 12) },
     { name: "아", birth: new Date(1999, 7, 18) },
@@ -271,28 +271,28 @@ function birth() {
     { name: "G", birth: new Date(2000, 8, 13) },
     { name: "H", birth: new Date(2000, 9, 5) },
     { name: "I", birth: new Date(2000, 10, 30) },
-    { name: "J", birth: new Date(2000, 12, 14) },
+    { name: "J", birth: new Date(2000, 0, 29) },
   ];
   let day_now = new Date();
-  let day_now_month = (day_now.getMonth() + 1) //+ (day_now.getDay()+1);
+  let day_now_month = day_now.getMonth() + 1; //+ (day_now.getDay()+1);
   let day_now_day = day_now.getDate();
   // let name = students.name;
 
   for (i = 0; i <= students.length; i++) {
     let student = students[i];
     let birth = student.birth;
-    let birth_month = (birth.getMonth() + 1) //+birth.getDay();
+    let birth_month = birth.getMonth() + 1; //+birth.getDay();
     let birth_day = birth.getDate();
     if (birth_month == day_now_month && birth_day == day_now_day) {
-      document.write("생일축하"+ "\n"+"생일인사람: "+student.name);
+      document.write("생일축하" + "\n" + "생일인사람: " + student.name);
       console.log("비교중");
       console.log(birth_month);
       console.log(day_now_month);
       console.log(birth_day);
-
-    } else {
       
-      break;
+    } else {
+      console.log("틀리는중");
+      continue;
     }
   }
 }
