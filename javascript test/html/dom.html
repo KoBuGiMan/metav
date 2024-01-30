@@ -7,8 +7,8 @@
   </script>
 </head>
 
-<body>
-  <p  id="testp" style="background-color: bisque; color: blueviolet;" onclick="ptes()">
+<body id="parent"><!-- <body onload="alerttest()"> -->
+  <p id="testp" style="background-color: bisque; color: blueviolet;" onclick="ptes()">
     나는<span style="color: teal;">배고프다</span>
   </p>
 
@@ -19,9 +19,25 @@
   <p id="imgt" style="color: black;" onclick="imgtest()">
     클릭<span style="color: red;">하세요</span>
   </p>
+  <br><br><br>
+  <button type="button" onclick="btnstyle(this,'black','30px')">버튼</button>
+  <button type="button" onclick="btnstyle(this,'red','50px')">버튼</button>
+  <div onclick="btnstyle(this,'green','60px')">여기여기여기여기</div>
+  <br><br><br>
+  <input id="input" type="text" value="여기요">
+  <br><br><br>
+  <div>
+    아아아아<span>아아아앙</span>아아아아아<span>아아아아아아아</span>아아아아아아아<span>아아아아아아</span>아아아아아아아아아아아아아아아아아아아아아아아아
+  </div>
+  <button type="button" onclick="changespan()">바꾸기</button>
+<br><br><br>
 
-
-
-
+<textarea id="srcText" rows="10" cols="50"></textarea>
+<br><br>
+<button onclick="opentest()">문서출력</button>
 </body>
+<br><br>
+
+<a href="javascript:create()">DIV생성</a>
+<p></p>
 </html>
