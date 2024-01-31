@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
-<script src = "../javascript/event.js"></script>
+<script src="../javascript/event.js"></script>
+
 <head>
 
 </head>
-
-<body onload="init()">
+<!-- alert('이 사이트는 ~~~~')-->
+<body onload="init2()">
   <form>
     <button type="button" onmouseover="this.style.backgroundColor ='violet'"
       onmouseout="this.style.backgroundColor = 'green'"
@@ -17,8 +18,34 @@
     <p id="p">
       마우스
     </p>
-
   </div>
+  <p id="j">
+    마우스
+  </p>
+  <button onclick="f(event)">버튼</button>
+  <p id="g">
+    이벤트
+  </p>
+  <button onclick="run(event)">
+    버튼
+  </button>
+  <form>
+    식<input type="text" id="exp" value=""><br>
+    값<input type="text" id="result">
+    <input type="button" value="계산" onclick="cal()">
+  </form>
+  <div>
+    마우스
+    <span onmousedown="down(this)" onmouseup="up(this)" onmouseover="over(this)" onmouseout="out(this)"
+      onwheel="wheel(event, this)">
+      이벤트
+    </span>
+    발생
+  </div>
+  
+  
+
 </body>
+
 
 </html>

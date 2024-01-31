@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> 배열에 데이터 저장 후 출력해보기 </title>
+
+</head>
+
+<body>
+
+  <h3> 배열에 데이터 저장 후 출력해보기 </h3>
+
+  문자열을 여러개 입력 후 출력버튼 클릭 시 입력했던 모든 문자열이 출력되도록 만들것 <br>
+
+  <fieldset>
+    <p> 입력 </p>
+    이름:<input type="text" name="data1" id="data1"><br>
+    성:<input type="text" name="data2" id="data2"><br>
+    이메일:<input type="text" name="data3" id="data3"><br>
+    <button onclick="input()">입력</button>
+
+  </fieldset>
+
+
+  <input id="testprint" value="이름을 입력하세요." type="text"> <br>
+  <button onclick="testprint()">출력</button>
+  <script>
+    let i = 0;
+    let info = new Array();
+    info[i];
+    
+
+    function input() {
+      let str = document.getElementById("data1").value;
+
+      let str2 = document.getElementById("data2").value;
+
+      let str3 = document.getElementById("data3").value;
+
+      let obj = { str, str2, str3 };
+      info.push(obj);
+
+      console.log(info);
+    }
+
+
+    function testprint() {
+      let name1 = document.getElementById("testprint").value;
+
+      console.log(name1);
+      for (i = 0; i < info.length; i++) {
+        let cal = info;
+        cal = JSON.stringify(cal);
+        alert(cal);
+        alert(name1);
+        
+        if (cal.indexOf(name1) >= 0) {
+          alert("일치합니다");
+          // cal =info;
+          alert(cla[i]);
+          alert(i);
+          break;
+        }
+        else if (cal.indexOf(name1) == -1) {
+          alert("정보가 없습니다.")
+          return;
+        }
+        
+      }
+    }
+  </script>
+</body>
+
+</html>
